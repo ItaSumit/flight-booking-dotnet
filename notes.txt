@@ -1,0 +1,72 @@
+Flight search criteria request:
+===================================
+{
+  "from": "BLR",
+  "to": "DEL",
+  "fromTravelDate": "2023-03-06",
+  "returnTravelDate": "2023-03-07",
+  "tripType": "RoundTrip",
+  "mealType": "Veg"
+}
+
+Create User request:
+==================================
+{
+  "firstName": "sumit",
+  "lastName": "a",
+  "emailId": "s.a@g.com",
+  "password": "123456"
+}
+
+Flight booking request- Round trip:
+=================================
+Round trip:
+{
+  "fromFlightId": 1,
+  "returnFlightId": 2,
+  "userEmail": "s.a@g.com",
+  "passengers": [
+    {
+      "firstName": "sumit",
+      "lastName": "agrawal",
+      "age": 35,
+      "mealType": "Veg",
+      "seatNumber": 1
+    },
+    {
+      "firstName": "a",
+      "lastName": "b",
+      "age": 30,
+      "mealType": "Veg",
+      "seatNumber": 2
+    }
+  ],
+  "fromTravelDate": "2023-03-06",
+  "tripType": "RoundTrip",
+  "returnTravelDate":"2023-03-07"
+}
+
+Flight booking request- One  way:
+One way:
+{
+  "fromFlightId": 1,
+  "userEmail": "s.a@g.com",
+  "passengers": [
+    {
+      "firstName": "sumit",
+      "lastName": "agrawal",
+      "age": 35,
+      "mealType": "Veg",
+      "seatNumber": 1
+    },
+    {
+      "firstName": "a",
+      "lastName": "b",
+      "age": 30,
+      "mealType": "Veg",
+      "seatNumber": 2
+    }
+  ],
+  "fromTravelDate": "2023-03-06",
+  "tripType": "OneWay"
+}
